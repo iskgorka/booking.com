@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [All Test Suite]">
+  <listeners>
+    <listener class-name="listener.ClassForListener"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="F:/Demo2/Demo2/SecondDemo(failed)">
+    <classes>
+      <class name="tests.CheckLoginPage">
+        <methods>
+          <include name="checkValidDataLogIn" invocation-numbers="0"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- tests.CheckLoginPage -->
+      <class name="tests.CheckForLanguageChange">
+        <methods>
+          <include name="checksForLanguageChanges"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- tests.CheckForLanguageChange -->
+    </classes>
+  </test> <!-- F:/Demo2/Demo2/SecondDemo(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
